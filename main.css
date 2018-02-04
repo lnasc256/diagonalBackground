@@ -1,71 +1,82 @@
 *, ::before, ::after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 body {
-    margin:0;
-    padding:0;
-    color: white;
-    font-family:sans-serif;
+  margin:0;
+  padding:0;
+  color: white;
+  font-family:sans-serif;
 }
+
 div.app {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 10.5vh auto 15.75vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 10.5vh auto 15.75vh;
 }
+
 header {
-    grid-column: span 12;
+  grid-column: span 12;
 }
+
 header:before {
-    background-color: yellow;
-    width: 65px;
+  background-color: yellow;
+  width: 65px;
 }
+
 footer {
-    grid-column: span 12;
+  grid-column: span 12;
 }
+
 header, footer {
-    background-color: #212121;
-    background-image: -webkit-linear-gradient(20deg, #212121 50%, #424242 50%);
+  background-color: #212121;
+  background-image: -webkit-linear-gradient(20deg, #212121 50%, #424242 50%);
 }
+
 div.content {
-    grid-column: span 12;
+  grid-column: span 12;
 }
+
 div.content > div.section {
-    padding-left: 14%;
-    padding-right: 14%;
+  padding-left: 14%;
+  padding-right: 14%;
 }
+
 div.content > div.section:before {
-    content: 'The quick brown fox jumps over the lazy dog.';
+  content: 'The quick brown fox jumps over the lazy dog.';
 }
 
 div.content > div:first-of-type {
-    background-color: #64B5F6;
-    background-image: -webkit-linear-gradient(300deg, #64B5F6 50%, #90CAF9 50%);
-    min-height: 89.5vh;
-    max-height: 89.5vh;
-    padding-top: 8%;
-    padding-bottom: 8%;
+  background-color: #64B5F6;
+  background-image: -webkit-linear-gradient(300deg, #64B5F6 50%, #90CAF9 50%);
+  min-height: 89.5vh;
+  max-height: 89.5vh;
+  padding-top: 8%;
+  padding-bottom: 8%;
 }
+
 div.content > div:nth-of-type(2) {
-    background-color: #009688;
-    background-image: -webkit-linear-gradient(320deg, #009688 35%, #4DB6AC 35%);
-    min-height: 60vh;
-    padding-top: 4%;
-    padding-bottom: 4%;
+  background-color: #009688;
+  background-image: -webkit-linear-gradient(320deg, #009688 35%, #4DB6AC 35%);
+  min-height: 60vh;
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
-  
+
 div.content > div:nth-of-type(3) {
-    background-color: #5C6BC0;
-    background-image: -webkit-linear-gradient(20deg, #5C6BC0 45%, #3F51B5 45%);
-    min-height: 60vh;
-    padding-top: 4%;
-    padding-bottom: 4%;
+  background-color: #5C6BC0;
+  background-image: -webkit-linear-gradient(20deg, #5C6BC0 45%, #3F51B5 45%);
+  min-height: 60vh;
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
+
 div.content > div:nth-of-type(4) {
-    background-color: #D32F2F;
-    background-image: -webkit-linear-gradient(135deg, #D32F2F 45%, #C62828 45%);
-    min-height: 70vh;
-    padding-top: 6%;
-    padding-bottom: 6%;
+  background-color: #D32F2F;
+  background-image: -webkit-linear-gradient(135deg, #D32F2F 45%, #C62828 45%);
+  min-height: 70vh;
+  padding-top: 6%;
+  padding-bottom: 6%;
 }
